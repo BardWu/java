@@ -16,6 +16,13 @@ public class Employee {
         this.money = money;
     }
 
+    public Employee(int age) {
+        this.age = age;
+    }
+
+    public Employee() {
+    }
+
     public int getAge() {
         return age;
     }
