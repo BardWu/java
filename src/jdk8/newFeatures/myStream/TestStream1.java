@@ -77,7 +77,7 @@ public class TestStream1 {
 
         //中间操作：
         Stream<MyTestObject> objectsStream  = myTestObjects.stream()
-                .skip()
+                .skip(1);
 
         //终止操作
         objectsStream.forEach(System.out::println);
