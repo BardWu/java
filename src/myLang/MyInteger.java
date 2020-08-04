@@ -104,6 +104,6 @@ public class MyInteger {
      *  Integer a = new Integer(2);
      *  int b = a;//自动拆箱(intValue())
      *
-     *  boolean j = a; 包装类和基本类型进行运算时,隐式自动拆箱
+     *  boolean j = a = b; 包装类和基本类型进行运算时,隐式自动拆箱
      */
 }

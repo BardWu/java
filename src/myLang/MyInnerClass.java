@@ -15,7 +15,7 @@ public  class MyInnerClass {
     }
 
     /**
-     *   内部类
+     *   成员内部类
      */
 
     public class Inner{
@@ -24,14 +24,14 @@ public  class MyInnerClass {
             System.out.println("age:"+age);
         }
     }
-
-    public static class StaticInner{
+    /**
+     *   静态内部类
+     */
+    protected static class StaticInner{
         String sex = "男";
-
         public void staticInner(){
             System.out.println("sex:"+sex);
         }
-
     }
 
 

@@ -12,6 +12,8 @@ public class MyTest {
 
     @Test
     void test1(){
+
+
         int i = 10;
         assert i<9;
         System.out.println("123");
