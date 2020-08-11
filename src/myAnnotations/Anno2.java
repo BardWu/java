@@ -6,7 +6,7 @@ package myAnnotations;
  * @author: wh
  * @create: 2020-08-04 16:32
  **/
-@MyResource
+@MyService
 public class Anno2 {
 
     private String name;

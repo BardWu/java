@@ -1,11 +1,7 @@
 package myAnnotations;
 
-import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
-import org.junit.jupiter.api.Test;
-
 import java.io.File;
 import java.lang.reflect.Field;
-import java.lang.reflect.Method;
 import java.util.*;
 
 /**
@@ -65,7 +61,7 @@ public class TestMain {
         Map<Class,Object> objectMap = new HashMap<>();
         classes.forEach(x->{
             try {
-                if(x.isAnnotationPresent(MyResource.class)){
+                if(x.isAnnotationPresent(MyService.class)){
 
                     System.out.println("put key:"+x);
                     System.out.println("put value:"+x.newInstance());
@@ -88,7 +84,7 @@ public class TestMain {
                 Field[] fields = x.getDeclaredFields();
 
                 for (Field field : fields) {
-                    if(field.isAnnotationPresent(MyAutowirde.class)){
+                    if(field.isAnnotationPresent(MyAutowride.class)){
                         field.setAccessible(true);
                         if(objectMap.containsKey(field.getType())){
                             Object obj = x.newInstance();

@@ -6,14 +6,14 @@ package myAnnotations;
  * @author: wh
  * @create: 2020-08-04 16:32
  **/
-@MyResource
+@MyService
 public class Anno1 {
 
     private String name;
 
     private int age;
 
-    @MyAutowirde
+    @MyAutowride
     private Anno2 anno2;
 
     public Anno1() {

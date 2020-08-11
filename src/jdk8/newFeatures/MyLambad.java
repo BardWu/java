@@ -2,6 +2,8 @@ package jdk8.newFeatures;
 
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.function.*;
 
 /**
@@ -96,6 +98,25 @@ public class MyLambad {
 
     };
 
+    /**
+     * map+reduce
+     * variableImteItem.getItem()值为null,则报nullPointException
+     */
+    @Test
+    void test5(){
+
+        List<VariableImteItem> list  = new ArrayList<>();
+        VariableImteItem variableImteItem = new VariableImteItem(1);
+        list.add(variableImteItem);
+         variableImteItem = new VariableImteItem(2);
+        list.add(variableImteItem);
+        variableImteItem = new VariableImteItem();
+        list.add(variableImteItem);
+        Integer currentUsedByteNumber = list.stream()
+                .map(VariableImteItem::getItem)
+                .reduce(0, (x, y) -> x + y);
+        System.out.println(currentUsedByteNumber);
+    }
 
 
 }
