@@ -1,5 +1,10 @@
 package gitConflict;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 /**
  * @program: java
  * @description:
@@ -16,5 +21,12 @@ public class Test1 {
     private String sex;
     private String address;
 
+
+    public static void main(String[] args) {
+        List<String> itemNameList = new ArrayList<>();
+        itemNameList.add("国五");
+        itemNameList.add("国六");
+        System.out.println(itemNameList);
+    }
 
 }
