@@ -7,6 +7,4 @@ package gitConflict;
  * @create: 2021-02-01 13:32
  **/
 public class MasterAdd {
-
-    private String test;
 }
