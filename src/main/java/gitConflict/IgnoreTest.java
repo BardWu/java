@@ -9,4 +9,5 @@ package gitConflict;
 public class IgnoreTest {
     private String a;
     private String b;
+    private String d;
 }
