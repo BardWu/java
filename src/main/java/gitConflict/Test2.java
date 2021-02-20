@@ -19,8 +19,6 @@ public class Test2 {
     private String sex;
     private String address;
 
-    private String a;
-
 
     public static void main(String[] args) {
         List<String> itemNameList = new ArrayList<>();
