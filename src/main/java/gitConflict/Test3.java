@@ -12,5 +12,6 @@ import java.util.List;
 public class Test3 {
 
 
+    private String conflictTest;
 
 }
