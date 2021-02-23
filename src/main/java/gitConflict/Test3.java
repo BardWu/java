@@ -12,6 +12,6 @@ import java.util.List;
 public class Test3 {
 
 
-    private String conflictTest;
+    private String conflictTest2;
 
 }
