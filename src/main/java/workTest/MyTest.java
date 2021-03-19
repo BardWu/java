@@ -35,5 +35,6 @@ public class MyTest {
         Long ids = null;
         System.out.println(String.valueOf(id).equals("null"));
         System.out.println("测试 撤销远程提交");
+        System.out.println("测试 撤销远程提交2");
     }
 }
