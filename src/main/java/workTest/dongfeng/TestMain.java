@@ -1,5 +1,7 @@
 package workTest.dongfeng;
 
+import org.junit.Test;
+
 /**
  * @program: java
  * @description:
@@ -30,5 +32,12 @@ public class TestMain {
 
     public void test2()throws Exception{
         test1();
+    }
+
+    @Test
+    public void test3(){
+
+        System.out.println(String.format("223","23"));
+
     }
 }
