@@ -3,6 +3,7 @@ package myLang.datastuct.Map;
 import org.junit.Test;
 
 import java.util.HashMap;
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * @program: java
@@ -23,7 +24,7 @@ public class TestHashMap {
 
     @Test
     void test2(){
-        hashMap = new HashMap();
+        hashMap = new HashMap(17);
         System.out.println(hashMap.put("1","1"));
         System.out.println(hashMap.put("1","3"));
     }
@@ -45,4 +46,12 @@ public class TestHashMap {
         System.out.println(stringBuilder.deleteCharAt(stringBuilder.length() - 1));
 
     }
+
+    public void test5(){
+
+        AtomicInteger atomicInteger = new AtomicInteger();
+
+    }
+
+
 }
